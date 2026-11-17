@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mes tâches — ToDo CESI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html">ToDo CESI</a>
+        <nav aria-label="Navigation principale">
+            <a id="navacceuile" href="#accueil">Accueil</a></li>
+            <a id="navtasks"   href="#tasks" aria-current="page">Mes tâches</a></li>
+            <a id="navapropos" href="#apropos">À propos</a></li>
+        </nav>
+    </header>
+
+    <main id="accueil">
+        <h1>Ma liste de tâches</h1>
+        <p class="subtitle">Interface cliente d’une API Node.js / MySQL</p>
+        <span class="connection" title="État illustratif : aucune API connectée dans ce corrigé">
+            <img class="icone" src="assets/icone.png" alt="point">
+            <span class="dot" aria-hidden="true"></span>Temps réel connecté
+        </span>
+
+        <form id="task-form">
+            <label for="title">Nouvelle tâche</label>
+            <input id="title" name="title" required minlength="2" maxlength="120"
+                placeholder="Ex. Terminer le TP" autocomplete="off">
+            <button class="add" type="submit">Ajouter</button>
+        </form>
+
+        <ul id="tasks" aria-label="Liste des tâches">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p id="message" role="status" class="sr-only"></p>
+        <p id="empty" hidden>Aucune tâche à afficher.</p>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
